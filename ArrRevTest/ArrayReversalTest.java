@@ -1,6 +1,9 @@
+package arrRevTest;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import revClass.ReverseClass;
 
 
 public class ArrayReversalTest {
