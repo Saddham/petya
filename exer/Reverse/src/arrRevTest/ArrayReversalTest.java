@@ -3,7 +3,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import revClass.ReverseClass;
+import arrRev.ArrayReversal;
+
 
 
 public class ArrayReversalTest {
@@ -11,7 +12,7 @@ public class ArrayReversalTest {
 	@Test
 	public void testReverseWithEvenLengthOfArray() {
 		int[] revArray = {1, 2, 3, 4, 5, 6}; 
-		ReverseClass.reverse(revArray); 
+		ArrayReversal.reverse(revArray); 
 		assertArrayEquals(new int[]{6, 5, 4, 3, 2, 1}, revArray);
 
 
@@ -19,7 +20,7 @@ public class ArrayReversalTest {
 	@Test
 	public void testReverseWithOddLengthOfArray() {
 		int[] revArray = {1, 2, 3, 4, 5, 6, 7}; 
-		ReverseClass.reverse(revArray); 
+		ArrayReversal.reverse(revArray); 
 		assertArrayEquals(new int[]{7, 6, 5, 4, 3, 2, 1}, revArray);
 
 
@@ -27,19 +28,19 @@ public class ArrayReversalTest {
 	@Test
 	public void testReverseWithEmptyArray() {
 		int[] revArray = {}; 
-		ReverseClass.reverse(revArray); 
+		ArrayReversal.reverse(revArray); 
 		assertArrayEquals(new int[]{}, revArray);
 	}
 	@Test
 	public void testReverseWithNullArray() {
 		int[] revArray = null; 
-		ReverseClass.reverse(revArray); 
+		ArrayReversal.reverse(revArray); 
 		assertArrayEquals(null, revArray);
 	}
 	@Test
 	public void testReverseWithJustOneElementArray() {
 		int[] revArray = {1}; 
-		ReverseClass.reverse(revArray); 
+		ArrayReversal.reverse(revArray); 
 		assertArrayEquals(new int[]{1}, revArray);
 	}
 
