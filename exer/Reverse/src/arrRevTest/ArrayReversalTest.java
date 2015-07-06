@@ -1,9 +1,7 @@
 package arrRevTest;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
-
 import arrRev.ArrayReversal;
 
 public class ArrayReversalTest {
